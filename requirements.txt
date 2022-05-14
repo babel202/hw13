@@ -1,0 +1,5 @@
+seaborn
+altair
+pandas
+plotly
+matplotlib
