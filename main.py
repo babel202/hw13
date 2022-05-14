@@ -197,6 +197,7 @@ with st.echo(code_location='below'):
         st.plotly_chart(map1.update_layout(
             coloraxis_colorbar=dict(
                 title="Ratio of cases to population")))
+    st.write("I think that people who vote for Trump are more likely to become sick with COVID")
     st.header("Hypothesis confirmation")
     data_corona_sum["rep_dem_ration"] = data_corona_sum.REP / data_corona_sum.DEM
     fig, ax = plt.subplots()
@@ -208,7 +209,7 @@ with st.echo(code_location='below'):
     data_corona_sum['color'] = np.where(data_corona_sum.WINNER == "Trump", "red", "blue")
 
     radio2 = st.radio(
-        "What's your favorite movie genre",
+        "Regression order",
         ('Order 1', 'Order 2'))
 
     if radio2 == 'Order 2':
